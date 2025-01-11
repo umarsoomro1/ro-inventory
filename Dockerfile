@@ -2,7 +2,7 @@
 FROM gradle:7.5.1-jdk17 AS build
 
 RUN apt-get update
-RUN apt-get openjdk-17-jdk -y
+RUN apt-get install openjdk-17-jdk -y
 
 COPY . .
 
