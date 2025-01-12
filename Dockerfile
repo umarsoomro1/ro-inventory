@@ -1,5 +1,5 @@
 # Stage 1: Build the application using Gradle
-FROM gradle:7.5.1-jdk17 AS build
+FROM ubuntu:latest AS build
 
 RUN apt-get update
 RUN apt-get install openjdk-17-jdk -y
