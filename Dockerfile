@@ -9,9 +9,6 @@ COPY . .
 # Build the application
 RUN ./gradlew bootJar --no-daemon
 
-# Debug the location of the JAR file
-RUN find . -name "*.jar"  # Debugging step to find the JAR file
-
 # Stage 2: Run the application using OpenJDK
 FROM openjdk:17-jdk-slim
 EXPOSE 8080
